@@ -14,7 +14,7 @@ jobs:
       - name: Trigger Parent Repository Sync
         uses: peter-evans/repository-dispatch@v3
         with:
-          # token: ${{ secrets.PARENT_REPO_TOKEN }} 
+          token: ${{ secrets.PARENT_REPO_TOKEN }} 
           repository: conor-hw/hw-docs
           event-type: docs-update
           client-payload: >-
