@@ -12,7 +12,7 @@ This project is built using NX monorepo architecture and includes:
 
 ## Key Features
 
-- **Monorepo Architecture:** Uses NX for managing multiple applications in a single repository
+- **Monorepo Architecture:** Uses for managing multiple applications in a single repository
 - **Shopify Integration:** Implements both online and offline authentication with Shopify
 - **Database Management:** Uses Mikro-ORM for database operations
 - **API Architecture:** NestJS backend with global `/api` prefix
