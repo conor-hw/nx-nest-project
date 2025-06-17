@@ -13,4 +13,4 @@
    - NextJS frontend
    - Shopify integration
    - Mikro-ORM for database management
-   - Support for both Online and Offline Shopify
+   - Support for both Online and Offline
