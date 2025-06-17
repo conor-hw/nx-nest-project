@@ -1,0 +1,25 @@
+name: Documentation Sync to Parent Hub
+
+on:
+  push:
+    paths:
+      - 'hw-docs/**'
+    branches:
+      - main # Or your primary branch
+
+jobs:
+  trigger-parent-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Parent Repository Sync
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          # token: ${{ secrets.PARENT_REPO_TOKEN }} 
+          repository: conor-hw/hw-docs
+          event-type: docs-update
+          client-payload: >-
+            {
+              "repository": "${{ github.repository }}",
+              "commit": "${{ github.sha }}",
+              "ref": "${{ github.ref }}"
+            }
