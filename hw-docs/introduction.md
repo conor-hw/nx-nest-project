@@ -14,3 +14,4 @@
    - Shopify integration
    - Mikro-ORM for database management
    - Support for both Online and Offline
+   - Hello to the community of practice
